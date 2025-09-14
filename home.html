@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioreabilita - Clínica de Fisioterapia e Osteopatia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;666;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #f0f8ff;
+            --text-color: #333;
+            --light-text-color: #666;
+            --white-color: #ffffff;
+            --dark-color: #2c3e50;
+            --accent-color: #ffc107;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background: var(--white-color);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+        }
+        header p {
+            color: var(--light-text-color);
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .cta {
+            background: var(--primary-color);
+            color: var(--white-color);
+            text-align: center;
+            padding: 40px 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+        }
+        .cta h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: var(--white-color);
+        }
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta a {
+            color: var(--primary-color);
+            background-color: var(--white-color);
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 700;
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .cta a:hover {
+            background-color: var(--dark-color);
+            color: var(--white-color);
+            transform: translateY(-3px);
+        }
+        .section {
+            background: var(--white-color);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+        .services-list li {
+            background: var(--secondary-color);
+            margin: 15px 0;
+            padding: 20px;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+        .services-list li:hover {
+            transform: translateX(5px);
+        }
+        .services-list strong {
+            color: var(--dark-color);
+        }
+        .testimonial {
+            background: var(--white-color);
+            border-left: 8px solid var(--accent-color);
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        .testimonial h3 {
+            color: var(--dark-color);
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .testimonial h3 span {
+            color: var(--accent-color);
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+        .testimonial p {
+            font-style: italic;
+            color: var(--light-text-color);
+            font-size: 1.1em;
+        }
+        .google-maps {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--dark-color);
+            color: var(--white-color);
+            margin-top: 30px;
+            border-radius: 0 0 8px 8px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: var(--white-color);
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px 0;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            .cta h2 {
+                font-size: 1.8em;
+            }
+            .cta a {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+            .section h2 {
+                font-size: 1.6em;
+            }
+            .google-maps {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>FISIOREABILITA</h1>
+            <p>Sua jornada para o bem-estar e a saúde começa aqui.</p>
+        </header>
+
+        <div class="cta">
+            <h2>Recupere a Sua Saúde com Osteopatia e Fisioterapia Especializada</h2>
+            <p>Agende sua consulta e dê o primeiro passo para uma vida mais equilibrada.</p>
+            <a href="https://wa.me/5517996667863?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Fisioreabilita%20para%20avalia%C3%A7%C3%A3o%20e%20tratamento.%20" target="_blank">Agendar via WhatsApp</a>
+        </div>
+
+        <div class="section">
+            <h2>O Que é Osteopatia?</h2>
+            <p>A **osteopatia** é uma abordagem de diagnóstico e tratamento que utiliza técnicas manuais para restaurar a função do corpo. Nosso foco é tratar a causa das dores, não apenas os sintomas, para que você possa viver sem limitações. Trata dores na coluna, lesões articulares, dores de cabeça, problemas de ATM e muito mais, sempre buscando a harmonia corporal.</p>
+        </div>
+
+        <div class="section">
+            <h2>Nossos Serviços</h2>
+            <ul class="services-list">
+                <li><strong>Osteopatia:</strong> Tratamento manual e holístico para diversas disfunções do corpo, visando restaurar a mobilidade e aliviar a dor.</li>
+                <li><strong>Fisioterapia Ortopédica e Traumatológica:</strong> Reabilitação de lesões, pós-cirúrgicos e problemas musculoesqueléticos, acelerando a recuperação e prevenindo recidivas.</li>
+                <li><strong>Reabilitação Postural:</strong> Correção da postura e alívio de dores crônicas relacionadas à má postura, com foco na educação e reeducação dos movimentos.</li>
+                <li><strong>Fisioterapia Esportiva:</strong> Prevenção e tratamento de lesões em atletas de todos os níveis, otimizando o desempenho e garantindo um retorno seguro às atividades.</li>
+            </ul>
+        </div>
+
+        <div class="section testimonial">
+            <h2>Depoimento de Quem Já Confiou na Fisioreabilita</h2>
+            <h3>Thainá Silva <span>⭐⭐⭐⭐⭐</span></h3>
+            <p>"Ótimo profissional! Muito atencioso, e faz questão de explicar cada procedimento, assim como cada dimensão do diagnosticado. Me ajudou muito com uma dor no joelho, e, antes do médico especialista dizer o que eu tinha, ele já havia feito um prognóstico pontual sobre o caso."</p>
+        </div>
+
+        <div class="section">
+            <h2>Onde Nos Encontrar</h2>
+            <p><strong>Endereço:</strong> R. João Lopes de Oliveira, Irapuã - SP, 14990-027</p>
+            <iframe 
+                class="google-maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.666191754024!2d-49.9572626!3d-21.6110996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bbcb8469e354a3%3A0xc6a8b7c7b8e1f5c6!2sR.%20Jo%C3%A3o%20Lopes%20de%20Oliveira%2C%20Irapu%C3%A3%20-%20SP%2C%2014990-027!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>Siga-nos no Instagram: <a href="https://www.instagram.com/dr.thiago_fisioreabilita/" target="_blank">@dr.thiago_fisioreabilita</a></p>
+        <p>Whatsapp: (17) 99666-7863</p>
+        <p>© 2024 Fisioreabilita. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
