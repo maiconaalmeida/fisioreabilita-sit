@@ -202,7 +202,9 @@
         .testimonial-carousel {
             height: auto; /* Altura flexível para o carrossel de depoimentos */
             box-shadow: none;
+            padding-bottom: 50px; /* Espaço para as setas e navegação */
         }
+
         .testimonial-carousel .swiper-slide {
             padding: 20px;
             align-items: flex-start;
@@ -210,7 +212,6 @@
             box-shadow: none;
             height: auto;
         }
-
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -386,7 +387,7 @@
                     
                     <div class="swiper-slide">
                         <h3>Vinícius Almeida <span>⭐⭐⭐⭐⭐</span></h3>
-                        <p>"Profissional incrível! O Dr. Thiago me ajudou a me recuperar de uma lesão no joelho e me deu toda a confiança para voltar a praticar esportes. Sua expertise e paciência são admirávels."</p>
+                        <p>"Profissional incrível! O Dr. Thiago me ajudou a me recuperar de uma lesão no joelho e me deu toda a confiança para voltar a praticar esportes. Sua expertise e paciência são admiráveis."</p>
                     </div>
 
                 </div>
@@ -435,6 +436,8 @@
 
         var swiperTestimonial = new Swiper('.testimonial-carousel', {
             loop: true,
+            slidesPerView: 1, // Exibe apenas 1 slide por vez
+            spaceBetween: 0,
             autoplay: {
                 delay: 7000,
                 disableOnInteraction: false,
