@@ -136,6 +136,8 @@
             font-style: italic;
             color: var(--light-text-color);
             font-size: 1.1em;
+            word-wrap: break-word; /* Força a quebra de palavras */
+            white-space: normal; /* Garante quebras de linha normais */
         }
         .google-maps {
             width: 100%;
@@ -197,17 +199,16 @@
             box-shadow: none;
             padding-bottom: 50px;
         }
-
         .testimonial-carousel .swiper-slide {
             padding: 20px;
             align-items: flex-start;
             background-color: var(--white-color);
             box-shadow: none;
             height: auto;
-            flex-direction: column; /* Força os elementos a se alinharem em coluna */
+            flex-direction: column;
         }
         .testimonial-carousel .swiper-slide h3 {
-            margin-bottom: 10px; /* Adiciona um espaço entre o nome e o texto */
+            margin-bottom: 10px;
         }
 
         /* Responsive adjustments */
@@ -433,7 +434,7 @@
 
         var swiperTestimonial = new Swiper('.testimonial-carousel', {
             loop: true,
-            slidesPerView: 1, // Exibe apenas 1 slide por vez
+            slidesPerView: 1, 
             spaceBetween: 0,
             autoplay: {
                 delay: 7000,
